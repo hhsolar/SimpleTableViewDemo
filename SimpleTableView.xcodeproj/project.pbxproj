@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		18BC14CF1F1F173500F533FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC14CE1F1F173500F533FA /* AppDelegate.swift */; };
-		18BC14D11F1F173500F533FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC14D01F1F173500F533FA /* ViewController.swift */; };
 		18BC14D41F1F173500F533FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BC14D21F1F173500F533FA /* Main.storyboard */; };
 		18BC14D71F1F173500F533FA /* SimpleTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18BC14D51F1F173500F533FA /* SimpleTableView.xcdatamodeld */; };
 		18BC14D91F1F173500F533FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BC14D81F1F173500F533FA /* Assets.xcassets */; };
 		18BC14DC1F1F173500F533FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BC14DA1F1F173500F533FA /* LaunchScreen.storyboard */; };
+		18BC14E51F1F1A7E00F533FA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC14E41F1F1A7E00F533FA /* StartViewController.swift */; };
+		18BC14E71F1F1BF300F533FA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BC14E61F1F1BF300F533FA /* MapKit.framework */; };
 		E88E497FAD1AE3D8BED2A6E5 /* Pods_SimpleTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4503DB5F9B8EFAAED6598DD4 /* Pods_SimpleTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18BC14CB1F1F173500F533FA /* SimpleTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BC14CE1F1F173500F533FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18BC14D01F1F173500F533FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18BC14D31F1F173500F533FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18BC14D61F1F173500F533FA /* SimpleTableView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTableView.xcdatamodel; sourceTree = "<group>"; };
 		18BC14D81F1F173500F533FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BC14DB1F1F173500F533FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BC14DD1F1F173500F533FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BC14E41F1F1A7E00F533FA /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		18BC14E61F1F1BF300F533FA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		192717E4BE1BCA1AC50B965A /* Pods-SimpleTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableView/Pods-SimpleTableView.release.xcconfig"; sourceTree = "<group>"; };
 		4503DB5F9B8EFAAED6598DD4 /* Pods_SimpleTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA931FEAE4674FC57F438CFA /* Pods-SimpleTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableView/Pods-SimpleTableView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BC14E71F1F1BF300F533FA /* MapKit.framework in Frameworks */,
 				E88E497FAD1AE3D8BED2A6E5 /* Pods_SimpleTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,20 +66,29 @@
 		18BC14CD1F1F173500F533FA /* SimpleTableView */ = {
 			isa = PBXGroup;
 			children = (
-				18BC14CE1F1F173500F533FA /* AppDelegate.swift */,
-				18BC14D01F1F173500F533FA /* ViewController.swift */,
+				18BC14E31F1F1A6500F533FA /* Supporting Files */,
 				18BC14D21F1F173500F533FA /* Main.storyboard */,
 				18BC14D81F1F173500F533FA /* Assets.xcassets */,
-				18BC14DA1F1F173500F533FA /* LaunchScreen.storyboard */,
-				18BC14DD1F1F173500F533FA /* Info.plist */,
 				18BC14D51F1F173500F533FA /* SimpleTableView.xcdatamodeld */,
+				18BC14E41F1F1A7E00F533FA /* StartViewController.swift */,
 			);
 			path = SimpleTableView;
+			sourceTree = "<group>";
+		};
+		18BC14E31F1F1A6500F533FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BC14CE1F1F173500F533FA /* AppDelegate.swift */,
+				18BC14DA1F1F173500F533FA /* LaunchScreen.storyboard */,
+				18BC14DD1F1F173500F533FA /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		44483E734B791CD1497C1CCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18BC14E61F1F1BF300F533FA /* MapKit.framework */,
 				4503DB5F9B8EFAAED6598DD4 /* Pods_SimpleTableView.framework */,
 			);
 			name = Frameworks;
@@ -128,6 +140,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = W2MFT9HK9F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -215,9 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BC14D11F1F173500F533FA /* ViewController.swift in Sources */,
 				18BC14D71F1F173500F533FA /* SimpleTableView.xcdatamodeld in Sources */,
 				18BC14CF1F1F173500F533FA /* AppDelegate.swift in Sources */,
+				18BC14E51F1F1A7E00F533FA /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +400,7 @@
 				18BC14E21F1F173500F533FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

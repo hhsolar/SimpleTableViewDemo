@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hir-ou-XHh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Choose an Address-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="SimpleTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EWm-XW-nyK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="515"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4cf-ge-eEh"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-y2-fGl">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="D4g-wO-Q0v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Confirm Address">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="oIY-yt-fPZ">
+                                <rect key="frame" x="18.5" y="590" width="337.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="AG6-dh-b22"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HjU-y2-fGl" firstAttribute="top" secondItem="EWm-XW-nyK" secondAttribute="bottom" constant="44" id="02C-78-N71"/>
+                            <constraint firstItem="EWm-XW-nyK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2wy-4B-KsC"/>
+                            <constraint firstItem="oIY-yt-fPZ" firstAttribute="width" secondItem="EWm-XW-nyK" secondAttribute="width" multiplier="0.9" id="Fr6-Wb-WHD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HjU-y2-fGl" secondAttribute="bottom" id="Lqa-gr-EvV"/>
+                            <constraint firstItem="EWm-XW-nyK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="My7-vl-SzL"/>
+                            <constraint firstAttribute="trailing" secondItem="EWm-XW-nyK" secondAttribute="trailing" id="XmL-HK-CG5"/>
+                            <constraint firstItem="oIY-yt-fPZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yrf-no-lVK"/>
+                            <constraint firstItem="HjU-y2-fGl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="awp-FB-Cxf"/>
+                            <constraint firstItem="oIY-yt-fPZ" firstAttribute="top" secondItem="EWm-XW-nyK" secondAttribute="bottom" constant="11" id="kqs-uu-gKZ"/>
+                            <constraint firstAttribute="trailing" secondItem="HjU-y2-fGl" secondAttribute="trailing" id="nXA-1S-6Tr"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Choose an Address" id="mT1-W8-Thr"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="oIY-yt-fPZ" id="89B-Hq-iKt"/>
+                        <outlet property="confirmButton" destination="HjU-y2-fGl" id="1CC-QX-Q2G"/>
+                        <outlet property="mapView" destination="EWm-XW-nyK" id="r9i-eE-FVo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="837.60000000000002" y="690.40479760119945"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jiZ-f3-zSC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hir-ou-XHh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n6F-Ly-L5W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PaF-l3-yts"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1L-9G-rlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="691.304347826087"/>
         </scene>
     </scenes>
 </document>
