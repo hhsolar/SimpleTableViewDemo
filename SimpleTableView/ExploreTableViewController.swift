@@ -65,6 +65,7 @@ class ExploreTableViewController: BaseTableViewController {
             } else {
                 controller.passShop = shops[(indexPath.row)]
             }
+            controller.flag = false
         }
     }
     

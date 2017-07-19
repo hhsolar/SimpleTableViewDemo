@@ -127,6 +127,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="m4C-LP-VoT"/>
+                    <connections>
+                        <segue destination="YYD-Ks-8qr" kind="show" identifier="goToDetail" id="lV9-5H-fbR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktc-3E-rZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6V-oI-CYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4456.8000000000002" y="419.64017991004499"/>
+            <point key="canvasLocation" x="4654" y="816"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jiZ-f3-zSC">
@@ -312,4 +315,7 @@
             <point key="canvasLocation" x="2645.5999999999999" y="1156.3718140929536"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lV9-5H-fbR"/>
+    </inferredMetricsTieBreakers>
 </document>
