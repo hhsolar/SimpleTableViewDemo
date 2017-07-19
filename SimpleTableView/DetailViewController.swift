@@ -54,6 +54,14 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
             favoritesButton.isEnabled = true
         }
         
+        let titleName = (passShop?.shopName)!
+        print(titleName)
+        if let match = titleName.range(of: "^.+(?=\\()", options: .regularExpression) {
+            navigationItem.title = titleName.substring(with: match)
+        } else {
+            navigationItem.title = titleName
+        }
+        
         setShopInfo(with: passShop!)
         
         setMenuInfo()

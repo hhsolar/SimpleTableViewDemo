@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class FetchedResultsTableViewController: BaseTableViewController, NSFetchedResultsControllerDelegate {
+class FetchedResultsTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     public func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()

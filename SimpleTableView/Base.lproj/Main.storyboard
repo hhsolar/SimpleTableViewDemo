@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="1662" y="689"/>
         </scene>
-        <!--Favorites Table View Controller-->
+        <!--Favorites-->
         <scene sceneID="T81-pl-j7g">
             <objects>
                 <tableViewController id="cW4-Xi-nuE" customClass="FavoritesTableViewController" customModule="SimpleTableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,22 +111,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cF8-rb-fEv">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cF8-rb-fEv" id="uIA-hX-S4U">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="cW4-Xi-nuE" id="ADp-sP-mep"/>
                             <outlet property="delegate" destination="cW4-Xi-nuE" id="0ea-4Y-lZM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="m4C-LP-VoT"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="m4C-LP-VoT"/>
                     <connections>
                         <segue destination="YYD-Ks-8qr" kind="show" identifier="goToDetail" id="lV9-5H-fbR"/>
                     </connections>
@@ -143,16 +133,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KrO-qg-9lU">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KrO-qg-9lU" id="1Wy-bH-g0P">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="CQ3-sS-P9n" id="OxP-7Z-t1G"/>
                             <outlet property="delegate" destination="CQ3-sS-P9n" id="MgD-eW-CdG"/>
@@ -316,6 +296,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lV9-5H-fbR"/>
+        <segue reference="Kja-fu-gYx"/>
     </inferredMetricsTieBreakers>
 </document>
