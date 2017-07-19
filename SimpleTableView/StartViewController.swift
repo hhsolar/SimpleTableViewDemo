@@ -51,6 +51,14 @@ class StartViewController: UIViewController, MKMapViewDelegate {
         covertToAddress(from: touchMapCoordinate)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "go to tabbar" {
+            let tabBarVC = segue.destination as! UITabBarController
+            let controller = tabBarVC.viewControllers?[0].content as! ExploreTableViewController
+            controller.exploreCoordinate = forPassCoordinate
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

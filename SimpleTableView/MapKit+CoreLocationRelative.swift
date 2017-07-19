@@ -45,7 +45,7 @@ extension StartViewController {
     // MARK: MKMapViewDelegate
     
     
-    
+
     private func stringFromPlacemark(_ placemark: CLPlacemark) -> String {
         var text = ""
         if let s = placemark.subThoroughfare {
