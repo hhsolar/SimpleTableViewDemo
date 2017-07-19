@@ -23,6 +23,8 @@
 		18BC14F61F1F2D2200F533FA /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC14F51F1F2D2200F533FA /* Shop.swift */; };
 		18BC14F81F1F359500F533FA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC14F71F1F359500F533FA /* DetailViewController.swift */; };
 		18BC14FA1F1F37C200F533FA /* MyShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC14F91F1F37C200F533FA /* MyShop.swift */; };
+		18F8823E1F1FB32F00429AE4 /* UITableViewDataSource+NSFetchedResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8823C1F1FB32F00429AE4 /* UITableViewDataSource+NSFetchedResultController.swift */; };
+		18F8823F1F1FB32F00429AE4 /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8823D1F1FB32F00429AE4 /* FetchedResultsTableViewController.swift */; };
 		E88E497FAD1AE3D8BED2A6E5 /* Pods_SimpleTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4503DB5F9B8EFAAED6598DD4 /* Pods_SimpleTableView.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		18BC14F51F1F2D2200F533FA /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		18BC14F71F1F359500F533FA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		18BC14F91F1F37C200F533FA /* MyShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShop.swift; sourceTree = "<group>"; };
+		18F8823C1F1FB32F00429AE4 /* UITableViewDataSource+NSFetchedResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewDataSource+NSFetchedResultController.swift"; sourceTree = "<group>"; };
+		18F8823D1F1FB32F00429AE4 /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
 		192717E4BE1BCA1AC50B965A /* Pods-SimpleTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableView/Pods-SimpleTableView.release.xcconfig"; sourceTree = "<group>"; };
 		4503DB5F9B8EFAAED6598DD4 /* Pods_SimpleTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA931FEAE4674FC57F438CFA /* Pods-SimpleTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableView/Pods-SimpleTableView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				18BC14ED1F1F212600F533FA /* FavoritesTableViewController.swift */,
 				18BC14F71F1F359500F533FA /* DetailViewController.swift */,
 				18BC14F31F1F241200F533FA /* BaseTableViewController.swift */,
+				18F8823C1F1FB32F00429AE4 /* UITableViewDataSource+NSFetchedResultController.swift */,
+				18F8823D1F1FB32F00429AE4 /* FetchedResultsTableViewController.swift */,
 				18BC14EF1F1F215700F533FA /* ItemTableViewCell.swift */,
 				18BC14F01F1F215700F533FA /* ItemTableViewCell.xib */,
 				18BC14F51F1F2D2200F533FA /* Shop.swift */,
@@ -268,8 +274,10 @@
 				18BC14EE1F1F212600F533FA /* FavoritesTableViewController.swift in Sources */,
 				18BC14CF1F1F173500F533FA /* AppDelegate.swift in Sources */,
 				18BC14F61F1F2D2200F533FA /* Shop.swift in Sources */,
+				18F8823F1F1FB32F00429AE4 /* FetchedResultsTableViewController.swift in Sources */,
 				18BC14F81F1F359500F533FA /* DetailViewController.swift in Sources */,
 				18BC14F11F1F215700F533FA /* ItemTableViewCell.swift in Sources */,
+				18F8823E1F1FB32F00429AE4 /* UITableViewDataSource+NSFetchedResultController.swift in Sources */,
 				18BC14E51F1F1A7E00F533FA /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
